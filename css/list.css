@@ -1,0 +1,153 @@
+/* 秒杀图标及 导航 */
+.sk {
+  position: absolute;
+  top: 40px;
+  left: 185px;
+  height: 32px;
+  padding: 5px 0 0 15px;
+  border-left: 2px solid #c81523;
+}
+.sk_list li {
+  float: left;
+  /* 有了行高可以不用给高 */
+  line-height: 45px;
+  margin: 0 30px;
+}
+.sk_list li a {
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+}
+.sk_list li a:hover {
+  color: #c81523;
+}
+
+.sk_con li {
+  float: left;
+  line-height: 45px;
+  margin: 0 20px;
+}
+.sk_con li a {
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "icomoon";
+}
+/* 列表页内容区 */
+.sk_bd {
+  margin-top: 25px;
+}
+.sk_bd ul {
+  /* 给父盒子加的足够宽，浮动元素就不掉啦 */
+  width: 1212px;
+}
+.sk_goods {
+  position: relative;
+  float: left;
+  width: 288px;
+  height: 408px;
+  /* 刚开始的颜色是透明色的 hover的时候变成红色 */
+  border: 1px solid transparent;
+  margin-right: 12px;
+  margin-bottom: 15px;
+}
+.sk_goods:hover {
+  border: 1px solid #c81523;
+}
+.sk_goods img {
+  display: block;
+  width: 203px;
+  margin: 0 auto;
+}
+/* 后台有名子 */
+.sk_goods_title {
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+  margin: 10px;
+}
+.sk_goods_price {
+  padding: 0 10px;
+}
+.sk_goods_price em {
+  font-size: 22px;
+  color: red;
+}
+.sk_goods_price del {
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 5px;
+  color: #a4a4a4;
+}
+.sk_goods_progress {
+  padding: 0 10px;
+}
+.bar {
+  display: inline-block;
+  /* 行内块元素和文字垂直居中 */
+  vertical-align: middle;
+  width: 130px;
+  height: 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.bar-in {
+  height: 100%;
+  width: 87%;
+  background-color: #c81523;
+}
+.sk_goods_buy {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #b1191a;
+  font-size: 20px;
+  color: #fff;
+}
+/* 分页  不给宽度 */
+.page {
+  /*里面的行内块和行内元素,文字都会居中对齐 */
+  text-align: center;
+  margin: 40px 0;
+}
+.page_num a {
+  /* a 行内元素，转行成行内块 才能设置大小 */
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px solid #ccc;
+}
+.page_num .page-prev,
+.page_num .page-next {
+  width: 83px;
+}
+.page_num .current,
+.page_num .dotted {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.page_skip  input{
+width: 36px;
+height: 36px;
+border: 1px solid #ccc;
+text-align: center;
+/* 过渡写在本身上 不写在 伪类上 */
+transition: all 0.5s;
+}
+/* 表单获取焦点后   */
+.page_skip  input:focus{
+border: 1px solid skyblue;
+width: 88px;
+}
+.page_skip button{
+    width: 54px;
+    height: 36px;
+    border: 1px solid #ccc;
+}
+/* computer 计算属性，盒模型 */

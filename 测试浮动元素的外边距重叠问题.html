@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        float: left;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+      }
+      .box2 {
+        float: left;
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        margin-top: 100px;
+        /* margin-left: 100px; */
+        /* margin-bottom: 10px; */
+      }
+      /* 外边距重叠(也就是上外边距重叠)，让它不在一个层级即可 
+      1.父子关系中，可让父盒子浮动，脱离文档流
+      2. 父子关系中，可让子盒子浮动，脱离文档流
+      3.父子关系中，都浮动也可解决 上外边距重叠
+    总结  父子关系中，只要有一个浮动，就可用margin-top*/
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <div class="box2"></div>
+    </div>
+  </body>
+</html>

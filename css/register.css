@@ -1,0 +1,123 @@
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  height: 82px;
+  border-bottom: 2px solid red;
+}
+.logo {
+  padding-top: 15px;
+}
+.registerarea {
+  height: 520px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+.registerarea h3 {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  background-color: #ececec;
+  padding: 0 10px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.registerarea h3 em {
+  float: right;
+  font-size: 14px;
+}
+.registerarea a {
+  color: red;
+}
+.reg-form {
+  width: 600px;
+  height: 420px;
+  /* background-color: pink; */
+  margin: 40px auto 0;
+}
+.reg-form li {
+  margin-bottom: 15px;
+}
+.reg-form label {
+  display: inline-block;
+  width: 100px;
+  height: 36px;
+  line-height: 36px;
+  text-align: right;
+}
+.reg-form .inp {
+  width: 238px;
+  height: 34px;
+  border: 1px solid #ccc;
+  margin-left: 5px;
+}
+.error {
+  color: red;
+  margin-left: 7px;
+}
+.error_ico,
+.success_ico {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/error_03.png);
+  /* 出现了行内块 常用这个和文字对齐 */
+  vertical-align: middle;
+}
+.success {
+  color: greenyellow;
+  margin-left: 7px;
+}
+.success_ico {
+  background: url(../img/error_03.png);
+}
+.safe {
+  padding-left: 223px;
+  color: #b2b2b2;
+}
+.safe em {
+  padding: 0 5px;
+  color: #fff;
+}
+.ruo {
+  background-color: red;
+}
+.zhong {
+  background-color: yellow;
+}
+.qiang {
+  background-color: green;
+}
+.agree {
+  padding-left: 109px;
+}
+.agree input {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.agree a {
+  color: blue;
+}
+.over {
+  width: 200px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  font-size: 16px;
+  background-color: red;
+
+  color: #fff;
+  margin-left: 126px; 
+}
+.footer{
+    height: 120px;
+    text-align: center;
+}
+.links{
+    margin-top: 20px;
+    height: 30px;
+}
+.copyright{
+    line-height: 20px;
+}

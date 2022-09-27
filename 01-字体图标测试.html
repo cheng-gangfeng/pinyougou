@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 1 引入字体图标   之前现在官网下载 需要的图标，解压后 把fonts文件夹复制到根目录下
+      在demo中复制小方块插入到html中 然后再 引入字体图标。2,3 
+      */
+      @font-face {
+        /* 字体名称 */
+        font-family: "icomoon";
+        /* 路径问题 */
+        src: url("fonts/icomoon.eot?7kkyc2");
+        src: url("fonts/icomoon.eot?7kkyc2#iefix") format("embedded-opentype"),
+          url("fonts/icomoon.ttf?7kkyc2") format("truetype"),
+          url("fonts/icomoon.woff?7kkyc2") format("woff"),
+          url("fonts/icomoon.svg?7kkyc2#icomoon") format("svg");
+        font-weight: normal;
+        font-style: normal;
+      }
+      /* 3,指定字体图标 */
+      span,div{
+        font-family: "icomoon";
+        font-size: 50px ;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  2 ,span 中放字体图标 先引入字体图标  复制的是icoomn demo中的小方框
+    双击选中-->
+    <span></span>
+    <div> </div>
+
+  </body>
+</html>

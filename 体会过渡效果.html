@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>过渡效果 常与hover</title>
+    <style>
+      /* 从一个状态到另一个状态  柔和一点
+      语法格式。
+      */
+      div {
+        width: 400px;
+        height: 150px;
+        background-color: pink;
+        /*4  注意过渡动画的属性，写在啦，div变化的盒子上(盒子本身上)，不是div :hover */
+        /* transition: 要过渡的属性  花费时间  运动曲线  何时开始; */
+        /*2 多组属性 要用逗号隔开，不能在下面直接写会被覆盖掉 */
+        /* transition: width 1s ease-in 0s, height 1s ,background-color ; */
+        /* 3  简写 监听所有的属性 改变 */
+        /* transition: all 1s ease 0s; */
+        transition: all 0.5s;
+      }
+      div:hover {
+        width: 800px;
+        height: 300px;
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

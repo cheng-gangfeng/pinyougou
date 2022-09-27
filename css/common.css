@@ -1,0 +1,325 @@
+/*公共样式*/
+/* 浮动 */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/* 声明字体 
+修改一下路径 */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?7kkyc2");
+  src: url("../fonts/icomoon.eot?7kkyc2#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?7kkyc2") format("truetype"),
+    url("../fonts/icomoon.woff?7kkyc2") format("woff"),
+    url("../fonts/icomoon.svg?7kkyc2#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*版心*/
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* a 强调颜色 */
+.style-red {
+  color: #c81623;
+}
+/* 快捷导航开始 */
+.shortcut {
+  height: 31px;
+  line-height: 31px;
+  background-color: #f1f1f1;
+}
+/* 导航中的所有li都浮动所以在父盒子中设置啦一下 */
+.shortcut li {
+  float: left;
+}
+/* 给竖线一个上左右的margin撑开距离 */
+.shortcut .sapce {
+  width: 1px;
+  height: 12px;
+  background-color: #666666;
+  /* 上 左右 下 */
+  margin: 9px 12px 0;
+}
+/* 三角的绘制使用字体图标 */
+.fr .icomoon {
+  font-family: "icomoon";
+  font-size: 16px;
+  /* 行高 继承 31px  字体图标字号大小变大 拉着文字底部对齐 向下啦
+ 行高等于高 文字垂直居中，行高小于高 文字会向上走  
+  */
+  line-height: 26px;
+}
+/* 快捷导航结束 */
+
+/* header 开始 */
+/*  我们直接给了一个大盒子，然后在大盒子中把各个小盒子定位出来位置  不再用margin值啦*/
+.header {
+  /* 父相 */
+  position: relative;
+  height: 105px;
+  /* background-color: pink; */
+}
+.logo {
+  /* 子绝 */
+  position: absolute;
+  top: 25px;
+  width: 175px;
+  height: 56px;
+  /* 先调位置  */
+  /* background-color: pink; */
+}
+.logo a {
+  display: block;
+  width: 175px;
+  height: 56px;
+  background: url(../img/logo.png);
+  /* 隐藏文字 */
+  font-size: 0;
+}
+.search {
+  position: absolute;
+  left: 348px;
+  top: 25px;
+}
+/* 输入框 */
+.search input {
+  float: left;
+  width: 445px;
+  height: 32px;
+  border: 2px solid #c81623;
+  border-right: 0px;
+  padding-left: 10px;
+  color: #ccc;
+}
+/* 搜索框 */
+.search button {
+  float: left;
+  width: 82px;
+  height: 36px;
+  background-color: #c81623;
+  color: #fff;
+  font-size: 16px;
+}
+/* 热词 */
+.hotwords {
+  position: absolute;
+  top: 65px;
+  left: 348px;
+}
+.hotwords a {
+  /* 用的margin a 链接的距离 */
+  margin: 0 12px;
+}
+/* 购物车 */
+.shopcar {
+  position: absolute;
+  right: 64px;
+  top: 25px;
+  width: 138px;
+  height: 34px;
+  line-height: 34px;
+  border: 1px solid #ffffff;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.shopcar .car {
+  font-family: "icomoon";
+  color: #da5656;
+}
+.shopcar .arrow {
+  margin-left: 7px;
+  font-family: "icomoon";
+}
+/* 购物数量 8*/
+/* 定位 盖住人家啦  绝对定位 80 会撑大 宽度不要写给个高度 */
+.count {
+  position: absolute;
+  top: -5px;
+  /* 左对齐 数字多的时候才能往右走 */
+  left: 105px;
+  background-color: #e60012;
+  /* 加了定位的盒子默认转换为行内块 */
+
+  height: 14px;
+  padding: 0 3px;
+  line-height: 14px;
+  color: #fff;
+  /* 圆角  无故而知新*/
+  border-radius: 7px 7px 7px 0;
+}
+/* png-24 更清晰 */
+/* header 结束 */
+/* nav  satrt */
+.nav {
+  height: 45px;
+  /* line-height: 45px; */
+  border-bottom: 2px solid #b1191a;
+}
+.dorpdown {
+  width: 209px;
+  height: 45px;
+}
+.dorpdown .dt {
+  /* 占满父盒子的宽高 把下面的兄弟挤下去啦 */
+  width: 100%;
+  height: 100%;
+  background-color: #b1191a;
+  /* 文字水平垂直居中 */
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+}
+.dorpdown .dd {
+  /* 宽度和父盒子一样宽 ，高度自己设置 */
+  height: 465px;
+  background-color: #c81623;
+  /* 移动一下空出边框  Ctrl 滚轮可放大网页*/
+  margin-top: 2px;
+}
+
+/* 由hover 的时候效果 得出 padding给li  
+hover给li 
+*/
+.menu-item {
+  height: 31px;
+  line-height: 31px;
+  /* 移动一下左边留出一个边框  margin top left 移动自己 right bottom移动别人 */
+  margin-left: 1px;
+  padding: 0 10px;
+transition: all 0.5s;
+}
+
+.menu-item:hover {
+  background-color: #fff;
+  padding-left: 20px;
+}
+/* 鼠标经过li a 变颜色 */
+.menu-item:hover a {
+  color: #c81623;
+}
+.menu-item a {
+  font-size: 14px;
+  color: #fff;
+}
+.menu-item i {
+  float: right;
+  font-family: "icomoon";
+  font-size: 18px;
+  color: #fff;
+}
+/* 浮动的盒子，如果外边父盒子有padding ，会在padding内，盖不住padding */
+/* 右侧导航  分析布局方法和思路
+字数不一样多 li 能给宽 通过左右padding撑开即可 量两个盒子之间的距离除以二
+给盒子大小 文字垂直居中
+看a 的范围是多大的。 看效果 。用a的宽度撑开。
+*/
+.navitems {
+  margin-left: 10px;
+}
+.navitems li {
+  /*浮动到一行上 */
+  float: left;
+}
+.navitems li a {
+  display: block;
+  line-height: 45px;
+  padding: 0 25px;
+  font-size: 16px;
+}
+/* nav  end */
+/* footer start */
+/* common.css 是公共样式，是其他页面用到的。 */
+/* 分析是最重要的 */
+.footer {
+  height: 386px;
+  padding-top: 30px;
+  background-color: #f5f5f5;
+}
+/* 精灵图 相同部分提出来写成公共的类 */
+.mod_service {
+  height: 79px;
+  /* background-color: pink; */
+  /* 有一个下边框 */
+  border-bottom: 1px solid #ededed;
+}
+.mod_service li {
+  float: left;
+  width: 240px;
+  height: 79px;
+}
+.mod_service_icon {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-left: 35px;
+  background: url(../img/icons.png) no-repeat;
+}
+.mod_service_zheng {
+  /* 浮动的盒子可以直接给大小  不需要转换*/
+
+  background-position: -253px -3px;
+  /* 信息面板有坐标轴 x y 值 */
+  /* background-position: -253px -3px; */
+}
+.mod_service_title {
+  float: left;
+  margin-left: 5px;
+}
+.mod_service_title h5 {
+  /* 父盒子有浮动不怕外边距重叠 */
+  margin: 5px 0;
+}
+.mod_service_kuai {
+  /* 只是坐标不同  可写一个公共的类，多类名即可*/
+
+  background-position: -255px -54px;
+}
+.mod_service_bao {
+  /* 只是坐标不同  可写一个公共的类，多类名即可*/
+  /* 辅助线 小方块 点击看坐标 */
+  background-position: -256px -106px;
+}
+.mod_help {
+  height: 187px;
+  /* 背景色测试盒子的位置 */
+  /* background-color: pink; */
+  border-bottom: 1px solid #ededed;
+}
+.mod_help_item {
+  float: left;
+  width: 150px;
+  /* 浮动的元素 子元素没外边距重叠 */
+  /* 上右下左 */
+  padding: 20px 0 0 50px;
+}
+/* 从上到下，从外到内 */
+.mod_help_item dt {
+  height: 25px;
+  font-size: 16px;
+}
+.mod_help_item dd {
+  height: 21px;
+}
+.mod_help_app dt,
+.mod_help_app p {
+  padding-left: 15px;
+}
+.mod_help_app img {
+  margin: 7px 0;
+}
+.mod_copyright {
+  text-align: center;
+}
+.mod_copyright_links {
+  margin: 20px 0 15px 0; 
+}
+.mod_copyright_info{
+	line-height: 20px;
+}
+/* footer end */
